@@ -1,1 +1,56 @@
-<h1>Hero</h1>
+<div class="hero">
+    <div class="hero-image">
+        <img src="https://picsum.photos/400/600" alt="My Image">
+    </div>
+    <div class="hero-text">
+        <h2>Hi, ich bin</h2>
+        <h1>Gianluca Aversa-Gennari</h1>
+        <h3>Umschüler; Arbeitslosengeld bezieher; </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum quibusdam accusantium rem quam sint reiciendis eligendi sit nulla sapiente voluptate quis hic distinctio, iste harum officia tenetur? Porro commodi nostrum at?
+        </p>
+    </div>
+</div>
+
+<style>
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .hero-image {
+        max-height: 700px;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .hero-image img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .hero .hero-text {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 0.5rem ;
+        margin-top: 0;
+        color: blue;
+    }
+    .hero-text p {
+        margin-top: 1rem;
+        border: 1px solid rgb(62, 62, 62);
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 15px;
+        padding: 1rem;
+    }
+    .hero-text p::before {
+        color: magenta;
+        content: '"';
+    }
+    .hero-text p::after {
+        color: magenta;
+        content: '"';
+    }
+</style>
